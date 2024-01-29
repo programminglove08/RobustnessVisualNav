@@ -1,0 +1,14 @@
+https://github.com/facebookresearch/ImageBind
+https://github.com/mlfoundations/open_clip
+https://github.com/openai/CLIP
+
+Please note that all requirements are as on ImageBind and openclip/ clip. 
+
+Installations
+conda create --name imagebind python=3.8 -y
+pip install open_clip_torch
+conda install -c anaconda scikit-learn
+conda install -c conda-forge matplotlib
+pip install transformers
+conda install -c conda-forge einops
+conda install -c conda-forge iopath
