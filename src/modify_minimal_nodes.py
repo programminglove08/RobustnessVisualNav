@@ -405,8 +405,8 @@ if __name__ == "__main__":
 
     original_graph = NavigationGraph("graphs/graph_rectified_cropped.pkl")
 
-    img_to_img_args = {"learning_rate": 0.9, "l2_dist_threshold": 25, "cosine_sim_threshold": .95}
-    img_to_txt_args = {"learning_rate": 0.9, "l2_dist_threshold": 269, "cosine_sim_threshold": .75}
+    img_to_img_args = {"learning_rate": 0.09, "l2_dist_threshold": 16, "cosine_sim_threshold": .95}
+    img_to_txt_args = {"learning_rate": 0.5, "l2_dist_threshold": 269, "cosine_sim_threshold": .75}
     device = "cuda:1" if torch.cuda.is_available() else "cpu"
     model, preprocess = clip.load("ViT-L/14", device=device)
     for i in tqdm(range(0, len(all_routes))):
