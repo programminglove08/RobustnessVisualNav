@@ -51,17 +51,17 @@ You may store the graph in the graphs folder for subsequent preparation. To save
 
 ### Prepare Graph For Manipulation: 
 
-Before commencing manipulation, it's necessary to rectify and crop all the graph images. Utilize the following code in graph_modifications.ipynb:
+Before commencing manipulation, it's necessary to rectify and crop all the graph images. Utilize the following code in src/graph_modifications.ipynb:
 
 ```
 graph_recitified_cropped = recity_crop_modification(graph)
 ```
 
 ### Path Manipulation: 
-To modify different paths, refer to the modify_minimal_modes.py file. Example codes for loading and modifying paths are provided at the end of the file. Adjust these according to your requirements.
+To modify different paths, refer to the src/modify_minimal_modes.py file. Example codes for loading and modifying paths are provided at the end of the file. Adjust these according to your requirements.
 
 ### Detection method: 
 
-For detecting manipulation results, you will need two graphs: graph_rectified_and_cropped and manipulated_graph. To observe the effects of noise and magnitude representation differences, employ the detection.ipynb file.
+For detecting manipulation results, you will need two graphs: graph_rectified_and_cropped and manipulated_graph. To observe the effects of noise and magnitude representation differences, employ the src/detection.ipynb file.
 
 By following these instructions, you can effectively manipulate and analyze robot routes using our developed codebase.
